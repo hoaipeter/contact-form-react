@@ -3,27 +3,37 @@
 This project is implemented based on the [requirement](https://github.com/springload/form-validation-problem/). \
 It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Project structure
 
-In the project directory, you can run:
+Folder `components` is used to contain 4 components: dropdown, form, textarea, text input\
+App.js: To render component ContactForm\
+index.js: To render component App
 
-### `npm start`
+Stack
+-----
+- React (Create-React-App)
+- Formik
+- Prettier
+- Yup
+- @emotion/core
+- @emotion/styled
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Quick Start
+-----------
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```shell
+$ git clone https://github.com/hoaipeter/contact-form-react.git
+$ cd contact-form-react
+$ npm install
+$ npm start
+```
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+NPM Commands
+------------
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+|Command|Description|
+|---|---|
+|npm start|Start webpack development server @ **localhost:3000**|
+|npm run build|Build production bundles to **./build** directory|
+|npm test|Launches the test runner in the interactive watch mode|
